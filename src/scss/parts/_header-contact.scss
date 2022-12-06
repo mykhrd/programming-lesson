@@ -3,11 +3,11 @@
         display: flex;
         width: 100%;
 
-            @include device(desktop) {
-                justify-content: space-between;
-                align-items: center;
-                height:127px;  
-            }
+        @include device(desktop) {
+            justify-content: space-between;
+            align-items: center;
+            height:127px;  
+        }
     }
 
     &__logo {
@@ -43,17 +43,17 @@
         position: absolute;
         top  : 0;
         text-align: center;
-        transition: opacity 1s ease;
+        height: 100vh;
         width: 100%;
         z-index : 15;
 
         @include device(desktop) {
-            // background-color: #fff;
             color: unset;
             display: flex;
             letter-spacing: 1px;
             opacity: unset;
             position: unset;
+            height: 100%;
             width: 60%;
         }
         
@@ -65,15 +65,6 @@
                 width: 100%;
             }
 
-            li:hover{
-                background-color:#566550;
-
-                @include device(desktop) {
-                    background-color: unset;
-                }
-                
-            }
-
             li {
                 line-height: 42px;
 
@@ -81,6 +72,15 @@
                     display: block;
                     width: 100%;
                 }
+            }
+
+            li:hover {
+                background-color: #9fae99
+                ;
+
+                @include device(desktop) {
+                    background-color: unset;
+                }  
             }
         }
     }

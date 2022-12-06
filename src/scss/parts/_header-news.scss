@@ -41,14 +41,12 @@
         display: none;
         background-color: #6C7E64;
         color: #fff;
-        // opacity: .95;
         position: absolute;
         top  : 0;
         text-align: center;
-        transition: opacity 1s ease;
+        height: 100vh;
         width: 100%;
         z-index : 15;
-
 
         @include device(desktop) {
             display: block;
@@ -58,7 +56,7 @@
             letter-spacing: 1px;
             opacity: unset;
             position: unset;
-            height:100%;
+            height: 100%;
             width: 60%;
         }
             
@@ -70,17 +68,18 @@
                 width: 100%;
             }
 
+            li {
+                line-height: 42px;
+            }
+
             li:hover{
-                background-color: #889a80;
+                background-color: #566550;
 
                 @include device(desktop) {
                     background-color: unset;
                 }
             }
 
-            li {
-                line-height: 42px;
-            }
         }
     }
 

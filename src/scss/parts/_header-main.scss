@@ -43,19 +43,18 @@
         position: absolute;
         top  : 0;
         text-align: center;
-        // transition: opacity 1s ease;
+        height: 100vh;
         width: 100%;
         z-index : 15;
 
         @include device(desktop) {
-            // display: block;
             background-color: #fff;
             color: unset;
             display: flex;
             letter-spacing: 1px;
             opacity: unset;
             position: unset;
-            // height:100%;
+            height: 100%;
             width: 60%;
         }
         

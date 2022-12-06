@@ -6,8 +6,8 @@
                 <img class="header__contact__logo-img" src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png" alt=""> 
             </a>
         </div>
-        <nav class="header__main__g-nav g-nav-sp">
-            <ul class="header__main__g-nav__list">
+        <nav class="header__contact__g-nav g-nav-sp">
+            <ul class="header__contact__g-nav__list">
                 <li><a href="/about/">当院について</a></li>
                 <li><a href="/treatment/">施術について</a></li>
                 <li><a href="/menu/">メニュー</a></li>

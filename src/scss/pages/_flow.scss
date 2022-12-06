@@ -1,0 +1,257 @@
+.flow {
+    &__wrap {
+        width: 85%;
+        margin: 72px auto 0;
+        
+        @include device(desktop) {
+            margin: 150px auto 180px;
+            max-width: 1088px;
+            width: 90%;
+        }
+    }
+    &-title {
+        margin-bottom: 82px;
+        text-align: center;
+
+        @include device(desktop) {
+            margin-bottom: 148px;
+        }
+
+        h3 {
+            font-family: 'Shippori Mincho', serif;
+            @include font-size (20px);
+            font-weight: normal;
+            margin-bottom: 36px;
+
+            @include device(desktop) {
+                @include font-size (30px);
+                margin-bottom: 40px;
+            }
+        }
+
+        p {
+            @include device(desktop) {
+                @include font-size (16px);
+            }
+        }
+    }
+
+    &__list-first { 
+        margin-bottom: 67px;
+        line-height: 1.8;
+
+        @include device(desktop) {
+            margin: 0 auto 35px;
+            padding: 0 6%;
+            width: 50%;
+        }
+
+        &-number {
+            background-color: #6C7E64;
+            color: #fff;
+            line-height: 33px;
+            margin: 0 auto 26px;
+            text-align: center;
+            width: 32px;
+
+            @include device(desktop) {
+                margin: 0 auto 18px;
+            }
+        }
+
+        &-title { 
+            font-family: 'Shippori Mincho', serif;
+            @include font-size (20px);
+            font-weight: normal;
+            margin-bottom: 45px;
+            text-align: center;
+
+            @include device(desktop) {
+                @include font-size (30px);
+                margin-bottom: 43px;
+            }
+        }
+    }
+
+    &__list-main {
+        // スマホ時のみ表示の番号
+        &-number__sp {
+            background-color: #6C7E64;
+            color: #fff;
+            line-height: 33px;
+            margin: 0 auto 26px;
+            text-align: center;
+            width: 32px;
+
+            @include device(desktop) {
+                display: none;
+            }
+        }
+        // スマホ時のみ表示のタイトル
+        &-title__sp {
+            font-family: 'Shippori Mincho', serif;
+            @include font-size (20px);
+            font-weight: normal;
+            margin-bottom: 25px;
+            text-align: center;
+
+            @include device(desktop) {
+                display: none;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column-reverse;
+
+            @include device(desktop) {
+                display: flex;
+                flex-direction: unset;
+            }
+ 
+            &__content {
+                margin-bottom: 67px;
+
+                @include device(desktop) {
+                    border-right: 1px solid #c0c0c0;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;  
+                    margin: unset; 
+                    padding: 0 8% 0 25px;
+                    width: 50%;
+                }
+
+                // デスクトップ時表示の番号
+                &-number {
+                    display: none;
+                    
+                    @include device(desktop) {
+                        display: block;
+                        background-color: #6C7E64;
+                        color: #fff;
+                        line-height: 33px;
+                        margin: 0 auto 18px;
+                        text-align: center;
+                        width: 32px;
+                    }
+                }
+
+                // デスクトップ時表示のタイトル
+                &-title {
+                    display: none;
+
+                    @include device(desktop) {
+                        display: block;
+                        font-family: 'Shippori Mincho', serif;
+                        font-weight: normal;
+                        @include font-size (30px);
+                        margin-bottom: 44px;
+                        text-align: center;
+                    }
+                }
+
+                &-text {
+                    line-height: 1.8;
+                    padding: 0 15px;
+                }
+
+                h5 {
+                    opacity: .5;
+                    @include font-size (14px);
+                    font-weight: normal;
+                    margin: 36px 0 17px;
+                    text-align: center;
+
+                    @include device(desktop) {
+                        margin: 100px 0 13px;
+                    }
+                }
+
+                &-request {
+                    line-height: 1.8;
+                    opacity: .5;
+                }
+            }
+
+            &-img {
+                margin: 0 auto 30px;
+                text-align: center;
+                width: 100%;
+
+                @include device(desktop) {
+                    margin: 0 0 80px 0;
+                    text-align: unset;
+                    width: 50%;   
+                }
+            
+                .bg__color {
+                    background: linear-gradient(90deg, #fff 0%, #fff 50%,  #6C7E64 50%,  #6C7E64 100%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 281px;
+                    width: 100%;
+
+                    @include device(desktop) {
+                        background: linear-gradient(90deg, #fff 0%, #fff 50%,  #6C7E64 50%,  #6C7E64 100%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 600px;
+                    }
+                }
+
+                img {
+                    max-height: 203px;
+                    max-width: 254px;
+                    width: 75%;
+
+                    @include device(desktop) {
+                        margin-right: 22%;
+                        max-height: unset;
+                        max-width: unset;
+                        width: unset;
+                    }
+                }
+            }
+        }
+            
+        // 偶数番目のリストのスタイル変更
+        &__item:nth-child(even) {
+            @include device(desktop) {
+                margin-right: 2px;// ボーダーがずれるため調整
+                flex-direction: row-reverse;
+            }
+ 
+            .bg__color {
+                background: linear-gradient(90deg, #6C7E64 0%, #6C7E64 50%,  #fff 50%,  #fff 100%);
+
+                img {
+                    margin-left: 8%;
+
+                    @include device(desktop) {
+                        margin-right: unset;
+                        margin-left: 22%;
+                    }
+                }
+            } 
+        
+            .flow__list-main__item__content {
+                @include device(desktop) {
+                    border-right: none;
+                    border-left: 1px solid #c0c0c0;
+                    padding: 0 25px 0 8%;
+                } 
+            }
+        }
+
+        // リストの最後のボーダーの調整
+        &__item:nth-child(8) {
+            .flow__list-main__item-img {
+                margin: unset;
+            }
+        }
+    }
+    
+}

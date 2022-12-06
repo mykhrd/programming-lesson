@@ -1,0 +1,188 @@
+.footer {
+    &__wrap {
+        background-color: #6C7E64;
+        color: #fff;
+        padding-bottom: 35px;
+        
+        @include device(desktop) {
+            padding-bottom: 60px;
+            width: 100%;
+        }
+    }
+
+    &__menu__list {
+        border-bottom: 1px solid #c0c0c0;
+        margin: 0 auto;
+        padding-top: 65px;
+        width: 85%;
+
+        @include device(desktop) {
+            padding-bottom: 100px;
+            max-width: 1088px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding-left: 5%;
+
+            @include device(desktop) {
+                padding: 0 30px 0 60px;
+                width: 90%;
+            }  
+        }
+
+        a {
+            width: 32%;
+            color: #fff;
+            margin-bottom: 27px;
+           
+            @include device(desktop) {
+                margin-bottom: 30px;
+                width: 15%;
+            }
+        }
+        
+        a:nth-child(11) { 
+            width: 35%; 
+
+            @include device(desktop) {
+                width: 15%;
+            }
+        }
+    }
+
+    &__salon-info {
+        @include device(desktop) {
+            display: flex;
+            margin: 0 auto;
+            padding-top: 60px;
+            max-width: 1088px;
+            width: 90%;
+        }
+
+        &__content {
+            margin: 0 auto;
+            width: 85%;
+
+            @include device(desktop) {
+                display: flex;
+                width: 60%;
+            }
+
+            &__desktop-logo  {
+                display: none;
+
+                @include device(desktop) {
+                    display: block;
+                    margin-right: 80px;
+                }
+            }
+
+            &-text {
+                &__salon-name {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    @include device(desktop) {
+                        margin: unset;
+                    }
+
+                    img {
+                        margin-right: 36px;
+                        @include device(desktop) {
+                            display: none;
+                        }
+                    }
+
+                    h4 {
+                        font-family: 'Shippori Mincho', serif;
+                        @include font-size (20px);
+                        font-weight: normal;
+                        
+                        @include device(desktop) {
+                            @include font-size (30px);
+                            letter-spacing: 2px;
+                            margin-bottom: 45px;
+                        }
+                    } 
+                }
+
+                &__adress {
+                    margin-top: 37px;
+
+                    @include device(desktop) {
+                        margin: unset;
+                    }
+
+                    span {
+                        display: block;
+                        margin-left: 42px;
+
+                        @include device(desktop) {
+                            display: inline;
+                            margin: unset;
+                        }
+                    }
+                }
+
+                &__adress, &__business-hours, &__closed-day, &__phone-number {
+                    @include font-size (13px);
+                    margin-bottom: 24px;
+
+                    @include device(desktop){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        &__sns-links {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding-top: 25px;
+            width: 85%;
+
+            @include device(desktop) {
+                width: 40%;
+                margin-left: 90px;
+                padding: unset;
+            }
+        
+            &__instagram  {
+                margin-right: 15px;
+            }
+
+            &__instagram, &__facebook {
+                border: 1px solid #fff;
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                padding-right: 30px;
+                width: 40%;
+                min-width: 150px;
+            }
+
+            .sns__icon {
+                font-size: 30px;
+                margin: 0 20px;
+            }
+
+            &__copyright {
+                margin-top: 43px;
+                margin: 0 auto;
+                
+                @include device(desktop) {
+                    margin-top: 100px;
+                    margin-left: auto;
+                }
+            }
+        }
+    }    
+}

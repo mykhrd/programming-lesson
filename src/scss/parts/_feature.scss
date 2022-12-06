@@ -1,0 +1,78 @@
+
+.feature {
+    width: 100%;
+
+    &__wrap {
+        margin: 0 auto;
+        width: 85%;
+
+        @include device(desktop) {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 100px;
+            max-width: 1080px;
+            width: 90%;
+        }
+    }
+
+    &__left {
+        background: url(../../img/treatment-img-03.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 138px;
+
+        @include device(desktop) {
+            height: 220px;
+            display: flex;
+            position: relative;
+            width: 50%;
+        }
+    }  
+    
+    &__right {
+        background: url(../../img/treatment-img-04.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 138px;
+
+        @include device(desktop) {
+            height: 220px;
+            display: flex;
+            position: relative;
+            width: 50%;
+        }
+    }
+
+    &__right::before, &__left::before {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__left__link, &__right__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        &-btn {
+            img {
+                height: 40px;
+                width: 41px;
+
+                @include device(desktop) {
+                    height: unset;
+                    width: unset;
+                }
+            }
+
+            span {
+                color: #fff;
+            }
+        }
+    }                 
+}

@@ -1,0 +1,93 @@
+.contact {
+    &__form {
+        &__wrap {
+            margin: 0 auto 55px;
+            width: 85%;
+
+            @include device(desktop) {
+                margin: 0 auto 45px;
+                max-width: 1080px;
+                width: 90%;
+            }
+        }
+
+        &-title {
+            border-bottom: 1px solid #c0c0c0;
+            font-family: 'Shippori Mincho', serif;
+            @include font-size (20px);
+            text-align: center;
+
+            @include device(desktop) {
+                @include font-size (30px);
+            }
+            
+            p {
+                margin: 72px 0 35px;
+
+                @include device(desktop) {
+                    margin-bottom: 13px;
+                }
+            }
+        }
+
+        &__content {
+            padding-top: 45px;
+
+             @include device(desktop) {
+                margin: 60px 0 72px;
+             }
+
+            input, textarea {
+                border-color: #c0c0c0;
+                padding: 12px;
+                width: 100%;
+
+                @include device(desktop) {
+                    padding: 15px;
+                }
+            }
+
+            textarea {
+                height: 485px;
+
+                @include device(desktop) {
+                    height: 580px;
+                }
+            }
+
+            input[type="submit"] {
+                background-color: #6C7E64;
+                border: none;
+                color: #fff;   
+                display: block;
+                @include font-size (20px);              
+                margin: 40px auto 0;
+                padding: 20px 0;
+                width: 166px;
+
+                @include device(desktop) {
+                    @include font-size(30px);
+                    margin: 70px auto 0;
+                    padding: 25px 0;
+                    width: 280px;
+                }
+            }
+
+            .input-name {
+                @include font-size (20px); 
+                padding-bottom: 23px;
+                display: inline-block;
+
+                @include device(desktop) {
+                    font-family: 'Shippori Mincho', serif;
+                    @include font-size(20px);
+                    padding: 8px 0;
+
+                }
+            }
+        }
+    }
+}
+
+
+

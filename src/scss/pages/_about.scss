@@ -1,0 +1,311 @@
+.about-us {
+    &__strength{
+        &__wrap {
+            margin: 0 auto;
+            padding-top: 72px;
+            width: 85%;
+
+            @include device(desktop) {
+                padding-top: 108px; 
+                max-width: 1088px;
+                width: 90%;
+            }
+        }
+
+        &-title {
+            @include font-size(20px);
+            font-family: 'Shippori Mincho', serif;
+            font-weight: normal;
+            margin-bottom: 62px;
+            text-align: center;
+
+            @include device(desktop) {
+                @include font-size(30px); 
+                letter-spacing: 2px;
+                margin-bottom: 42px;
+                text-align: unset;
+            }
+        }
+
+
+        &__list__item {
+            margin-bottom: 87px;
+
+            @include device(desktop) {
+                margin-bottom: 113px;
+            }
+
+            &__heading {
+                @include device(desktop)  {
+                    display: flex;
+                    margin-bottom: 60px;
+                }
+            }
+
+            &__heading-text {
+                @include device(desktop) {
+                    margin-right: 10%;
+                    width: 50%;
+                }
+
+                h5{
+                    @include font-size(14px);
+                        font-family: 'Shippori Mincho', serif;
+                        font-weight: normal;
+                        margin-bottom: 1px;
+                        opacity: .7;
+
+                    @include device(desktop) {
+                        @include font-size(20px);
+                        margin: 5px 0 60px;
+                    }
+                }
+                
+                p { 
+                    @include font-size(18px);
+                    line-height: 2;
+                    margin-bottom: 67px;
+
+
+                    @include device(desktop) {
+                        @include font-size(20px);
+                        margin: unset;
+                    }
+                }
+            }
+
+            &__heading-image {
+                margin: 0 calc(50% - 50vw);
+                width: 100vw;
+                
+                @include device(desktop) {
+                    margin: unset;
+                    width: 50%;
+                }
+
+                img {
+                    width: 100%;   
+                }
+            }
+            
+
+            &-text {
+                margin-top: 43px;
+                line-height: 2;
+                @include device(desktop) {
+                    margin: unset;
+                }
+            }
+        }
+        
+    }
+
+    &__voices {
+        &__wrap {
+            margin: 0 auto;
+            width: 85%;
+
+            @include device(desktop) {
+                margin: 0 auto 60px;
+                max-width: 1088px;
+                width: 90%;
+            }
+
+            h4 { 
+                font-family: 'Shippori Mincho', serif;
+                @include font-size(20px);
+                font-weight: normal;
+                margin-bottom: 33px;
+                text-align: center;
+
+                @include device(desktop) {
+                    @include font-size(30px);
+                    letter-spacing: 2px;  
+                    margin-bottom: 55px;
+                    text-align: unset;
+                }
+            }
+        }
+
+        &__list-sp {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include device(desktop) {
+                display: none;
+            }
+
+            &__item {
+                margin-bottom: 36px;
+                text-align: center;
+                width: 48%;
+
+                img {
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    @include font-size(9px);
+                }
+            }
+        }
+
+        &__list {
+            display: none;
+
+            @include device(desktop) {
+                display: block;
+            }
+            
+            &__item {
+                padding: 53px 5% 76px;
+                background-color: #F7F7F7;
+                margin-bottom: 22px;
+
+                &__personal-data {
+                    display: flex;
+                    margin-bottom: 30px;
+
+                    img {
+                        margin-right: 28px;
+                    }
+
+                    &-text {
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                    }
+                }
+
+                &__content {
+                    line-height: 2;
+                }
+            }            
+        }
+    }
+
+    &__greetings {
+        &__wrap  {
+            margin: 110px auto 0;
+            width: 85%;
+
+            @include device(desktop) {
+                margin: 0 auto 145px;
+                max-width: 1088px;
+                width: 90%;
+            }
+
+            h4 {                
+                font-family: 'Shippori Mincho', serif;
+                @include font-size(20px);
+                font-weight: normal;
+                margin-bottom: 35px;
+                text-align: center;
+
+                @include device(desktop) {
+                    @include font-size(30px);
+                    letter-spacing: 2px;
+                    margin-bottom: 38px;
+                    text-align: left;
+                }
+            }
+        }
+
+        &__director-introduction {
+            text-align: center;
+
+            @include device(desktop) {
+                display: flex;
+                text-align: unset;
+            }
+
+            img { 
+                margin-bottom: 37px;
+                width: 60%;
+
+                @include device(desktop) {
+                    margin: 10px 35px 0 0;
+                    width: 40%;
+                }
+            }
+        }
+
+        &__director-introduction__content {
+            margin-bottom: 95px;
+            width: 100%;
+
+            @include device(desktop) {
+                margin: unset;
+                width: 60%;
+                display: flex;
+                flex-flow: column;
+            }
+
+            &__heading {
+                @include device(desktop) {
+                    display: flex;
+                    margin-bottom: 50px;
+                }
+
+                &-title {
+                    @include font-size(14px);
+
+                    @include device(desktop) {
+                        @include font-size(20px);
+                        margin-top: 10px;
+                        margin-right: 62px;
+                    }
+                }
+
+                &-name {
+                    display: flex;
+                    flex-flow: column;
+
+                    h3 {
+                        font-family: 'Shippori Mincho', serif;
+                        @include font-size(30px);
+                        font-weight: normal;
+                        letter-spacing: 2px;
+                        margin-bottom: 10px;
+
+                        @include device(desktop) {
+                            @include font-size(40px);
+                        }
+                    }
+                }
+            }
+
+            &-licenses {
+                @include font-size(14px);
+                margin: 60px 0 36px;
+
+                @include device(desktop) {
+                    @include font-size(20px);
+                    margin: 0 0 36px 0;
+                }
+            }
+            &-text {
+                line-height: 2;
+                text-align: left;
+
+                &-bottom {
+                    margin-top: 35px;
+
+                    @include device(desktop) {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__feature {
+        margin-bottom: 125px;
+    
+        @include device(desktop) {
+            margin-bottom: 110px;
+        }
+    }
+}

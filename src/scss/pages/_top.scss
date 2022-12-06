@@ -1,0 +1,828 @@
+.top{
+    // メインビジュアル
+
+    &__main-visual {          
+        &__wrap {
+            position: relative;
+        }
+        
+        &__hero {
+            background: #6C7E64;
+            position: relative;
+            
+            &-image {
+                display: flex;
+                margin-left: auto;
+                width: 80%;
+
+                img { 
+                    width: 100%;
+                }
+            }
+
+            &-catch {
+                position: absolute;
+                top: 0%;
+                left: 10%;      
+                display: flex;
+                align-items: center;
+                // width: 100%;
+                height: 100%;
+
+                p {
+                    @include font-size (25px);
+                    color:#fff;
+                    font-family: Shippori Mincho, Noto Serif JP, serif;
+                    font-weight: normal;
+                    letter-spacing: 2px;
+                    line-height: 1.8;
+                
+                    @include device (desktop) {
+                        @include font-size (50px);
+                    }
+                }
+            }
+        }
+
+        &__news {
+            font-family: Shippori Mincho, Noto Serif JP, serif;
+            background-color: #fff;
+            margin-left: 7.5%;
+            padding: 20px 0;
+            // width: 100%;
+            display: inline-block;
+
+            @include device (desktop) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 32px 64px;
+                // width: unset;  
+            }
+
+            &-date {
+                padding: 16px;
+                opacity: .5;   
+            }
+
+            &-title {
+                display: block;
+                padding: 8px 0;
+
+                @include device (desktop) {
+                    display: unset;
+                    padding: unset;
+                }
+            }
+        }
+    }
+    
+    // 女性に寄り添う鍼灸院
+
+    &__description {
+        width: 100%;
+
+        &__wrap {
+            margin: 0 auto;
+            width: 85%;
+
+            @include device(desktop) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 1080px;
+                margin: 90px auto;
+            }
+        }
+
+        &-image {     
+            @include device(desktop) {
+                width: 50%;    
+            }
+  
+            img {
+                margin: 65px 0 55px;
+                width: 100%;
+
+                @include device(desktop) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__contents {
+       
+            @include device(desktop) {
+                margin-left: 35px;
+                width: 50%;
+            }     
+
+            &-title {
+                @include font-size (20px);
+                font-family: 'Shippori Mincho', serif;
+                font-weight: normal;
+                letter-spacing: 2px;
+                margin-bottom: 30px; 
+                text-align: center;
+
+                @include device(desktop) {                   
+                    @include font-size (30px);
+                    letter-spacing: 2px;
+                    margin-bottom: 55px;
+                    text-align: left;
+                }
+            }
+
+            &-text {
+                line-height: 1.5;
+
+                @include device(desktop) {
+                    // letter-spacing: 1px;
+                    line-height: 2;
+                    margin-bottom: 50px;
+                }
+            }
+           
+            &-btn {       
+                width: 182px;
+                margin: 45px auto 65px;
+
+                @include device(desktop) {
+                    margin: unset;
+                }         
+            }
+        }
+    }
+
+    // 当院が選ばれる理由
+
+    &__strength {
+        background-color: #6C7E64;
+
+        &__wrap {
+        width: 83%;
+        padding: 52px 0 65px;
+        margin: 0 auto;
+        
+        @include device (desktop) {
+            padding: 60px 0;
+            width: 100%;
+        }   
+
+        }
+        &-title {
+            color: #fff;
+            font-family: 'Shippori Mincho', serif;
+            @include font-size (20px);
+            font-weight: normal;
+            text-align: center;
+
+            @include device (desktop) {
+                @include font-size (30px);
+                letter-spacing: 2px;
+                margin: 30px 0 0;
+                }       
+        }
+
+        &-subtitle {
+            color: #fff;
+            margin: 10px 0 35px;
+            opacity: 50%;
+            text-align: center;
+
+            @include device (desktop) {   
+                margin-top: 15px;   
+            }
+        }
+
+        &__list {
+            width: 100%;
+
+            @include device (desktop) {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                max-width: 1200px;
+                margin: 30px auto;
+            }
+
+            &__item {
+                background-color: #fff;
+                margin-bottom: 50px;
+
+                @include device (desktop) {
+                    margin: unset;
+                    text-align: center;
+                    width: 30%;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                &-number {
+                    color: #6C7E64;
+                    font-family: 'Shippori Mincho', serif;
+                    @include font-size (20px);
+                    margin: 45px 0 30px;
+                    opacity: 0.7;
+                    text-align: center;
+                    
+                    @include device (desktop) {
+                        margin: 30px 0;
+                    }
+                }
+
+                &-text {
+                    line-height: 2;
+                    margin: 0 auto;
+                    padding-bottom: 60px;
+                    width: 76%;
+
+                    @include device (desktop) {
+                        text-align: left;
+                        width: 80%;   
+                    }
+                }
+            }
+        }
+        &-btn {
+            margin: 50px auto 0;
+            width: 182px;
+
+            span {
+                color: #fff; 
+            }
+        }
+    }
+
+// この様なお悩みありませんか
+
+    &__problems {
+        &__wrap {
+            width: 83%;
+            margin: 0 auto;
+            margin-top: 90px;
+          
+            @include device(desktop) {
+                display: flex;
+                justify-content: space-between;
+                margin: 150px auto;
+                max-width: 1088px;
+                width: 90%;
+            }
+        }
+        &-title__sp {
+            font-family: 'Shippori Mincho', serif;
+            @include font-size (20px);
+            font-weight: normal;
+            margin-bottom: 34px;
+            text-align: center;
+
+            @include device(desktop) {
+                display: none;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column-reverse; 
+
+            @include device(desktop) {
+                display: flex;
+                flex-direction: unset;
+            }
+
+            &__contents { 
+                @include device(desktop) {
+                    width: 57%;
+                }
+
+                &-title {
+                    display: none;
+    
+                    @include device(desktop) { 
+                        display: block;
+                        @include font-size (20px);
+                        font-family: 'Shippori Mincho', serif;
+                        font-weight: normal;
+                        text-align: center;
+                        margin-bottom: 35px;
+                    }
+    
+                    @include device(desktop){
+                        @include font-size (30px);
+                        letter-spacing: 2px;
+                        margin-bottom: 45px;   
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    @include device(desktop) {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;       
+                    }
+                }
+
+                li {
+                    background-color: #FAFAFA;
+                    margin-bottom: 20px;
+                    padding: 10px 24px 10px 0;
+                    width: 100%;
+
+                    @include device(desktop) { 
+                        padding: 10px 0;
+                        width: 48%;
+                    }
+
+                    &::before {
+                        content: "";
+                        background-color: #6C7E64;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                        display: inline-block;
+                        margin: 0 9px 0 12px;
+                    }
+                }
+
+                li:nth-child(5) ,li:nth-child(6),  li:nth-child(7),  li:nth-child(8){
+                    width: 49%; 
+                }
+
+                li:nth-child(7) ,li:nth-child(8) {
+                    margin-bottom: unset;
+                }
+
+                @include device(desktop){
+                    li:nth-child(1) { order: 1; }
+                    li:nth-child(2) { order: 2; }
+                    li:nth-child(3) { order: 3; }
+                    li:nth-child(4) { order: 6; }
+                    li:nth-child(5) { order: 5; }
+                    li:nth-child(6) { order: 4; }
+                    li:nth-child(7) { order: 7; }
+                    li:nth-child(8) { order: 8; }
+                }
+            }
+
+            &-image {
+                margin-bottom: 43px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+    
+                @include device(desktop) {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: unset;
+                    margin-left: 25px;
+                    width: 43%;
+    
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+
+    // 皆様の声
+    &__voices {
+        &__wrap  {
+            width: 85%;
+            margin: 0 auto 65px;
+
+            @include device(desktop) {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto 140px;
+                max-width: 1080px;
+                width: 90%;
+            }
+        }
+
+        &__title  {
+            background-color: #6C7E64;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 45px;
+            height: 133px;
+            text-align: center;
+
+            @include device(desktop) {
+                margin: unset;
+                height: unset;
+                width: 48%;
+            }
+
+            &-text {
+                color: #fff;
+                letter-spacing: 2px;
+                
+                h3 {
+                    font-family: 'Shippori Mincho', serif;
+                    @include font-size (20px);
+                    font-weight: normal;
+                    margin-bottom: 20px;
+
+                    @include device(desktop) {
+                        @include font-size (30px);
+                        letter-spacing: 2px;
+                        margin-bottom: 19px;
+                    }
+                }
+
+                p {
+                    opacity: 0.5;
+                    @include font-size (14px);
+                    margin-left: 7px;
+                }
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-around;   
+
+            @include device(desktop) {
+                width: 48%;
+            }
+
+            &__item  {
+                margin-top: 35px;
+                text-align: center;
+                width: 48%;
+
+                @include device(desktop) {
+                    margin: 30px 0;
+                }
+
+                img {
+                    height: 73px;
+                    width: 71px;
+  
+                    @include device(desktop) {
+                        margin-bottom: 20px;
+                        height: unset;
+                        width: unset;
+                    }
+                }
+
+                p {
+                    @include font-size (9px);
+
+                    @include device(desktop) {
+                        @include font-size (14px);
+
+                    }
+                }
+            }
+        }
+    }
+
+
+// 鍼灸をもっと身近に　セルフケア
+
+    &__self-care {
+        background-color: #6C7E64;
+        width: 100%;
+
+            &__wrap {
+                margin: 80px auto 0;
+                padding: 62px 0 52px;
+                width: 85%;  
+
+                @include device(desktop) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    max-width: 1080px;
+                    padding: 90px 0;
+                    width: 90%;
+                }
+            }
+
+            &-image {
+                width: 100%;
+
+                @include device(desktop) {
+                    width: 50%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__content {
+                color: #fff;
+
+                @include device(desktop) {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-between;
+                    text-align: left;
+                    width: 50%;
+                }
+
+                &-title {
+                    @include font-size (20px);
+                    font-family: 'Shippori Mincho', serif;
+                    font-weight: normal;
+                    margin: 50px 0 27px;  
+
+                    @include device(desktop) {
+                        @include font-size (30px);
+                        letter-spacing: 2px;
+                        margin-top: 10px;
+                    }
+                }
+
+                &-text  {
+                    line-height: 2;
+                    margin-bottom: 45px;
+
+                    @include device(desktop) {
+                        line-height: 2;
+                        margin-bottom: 45px;
+
+                        span {
+                            display: block
+                        }
+                    }
+                }
+
+                &__link {
+                    &-btn { 
+                        span {
+                        color: #fff;
+                        }
+                    }
+                }
+            }
+    }
+
+ // お知らせ　news&blog
+    
+    &__news {
+        width: 100%;
+
+        &__wrap  {
+            margin: 0 auto;
+            padding: 78px 0 90px;
+            width: 85%;
+
+            @include device(desktop) {
+                max-width: 1080px;
+                margin: 0 auto;
+                padding: 78px 0 158px;
+                width: 90%;
+            }
+        }
+
+        &__heading {
+            text-align: center;
+            @include device(desktop) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+            &-text {
+                h3 {
+                    @include font-size (20px);
+                    font-family: 'Shippori Mincho', serif;
+                    font-weight: normal;
+                    margin-bottom: 15px;
+
+                    @include device(desktop) {
+                        @include font-size (30px);
+                        letter-spacing: 2px;
+                    }
+                }
+                p {
+                    opacity: 0.5;
+
+                    @include device(desktop) {
+                        text-align: left;
+                    }
+                }
+            }
+            &__link-desktop {
+                display: none;
+
+                @include device(desktop) {
+                    display: block;
+                }
+            }
+        }
+
+        &__contents {
+            border-top: 1px solid #c0c0c0;
+            margin-top: 35px;
+
+            @include device(desktop) {
+                margin-top: 70px;
+            }
+
+            &__item {
+                border-bottom: 1px solid #c0c0c0;
+                padding: 18px 0 17px;
+
+                @include device(desktop) {
+                    display: flex;
+                    justify-content: flex-start ;
+                    align-items: center;
+                    height: 90px;
+                }
+
+                &-date {
+                    display: inline-block;
+                    font-family: 'Shippori Mincho', serif;
+                    margin-right: 15px;
+                    opacity: 0.5;
+                }
+
+                &-category {
+                    display: inline-block;
+                    font-family: 'Shippori Mincho', serif;
+                    opacity: 0.5 ;
+                    
+
+                    @include device(desktop) {
+                        margin: unset;
+                        text-align: center;
+                        width: 50px;
+                    }
+                }
+
+                &-title {
+                    display: block;
+                    font-family: Noto Serif JP, serif;
+                    @include font-size (14px);
+                    font-weight: normal;
+                    margin-top: 20px;
+                   
+                    @include device(desktop) {
+                        margin: 0 0 0 50px; 
+                    }
+                }
+
+                @include device(desktop) {
+                    &-date, &category, &-title {
+                        line-height: 90px;
+                        margin-right: 20px;  
+                    }
+                }
+            }
+            // 更新情報がない場合の表示
+            &__no-post {
+                font-family: Noto Serif JP, serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+
+        &__link-sp {
+            margin-top: 40px;
+
+            @include device(desktop) {
+                display: none;
+            }
+           
+            &-btn {
+                margin: 0 auto;
+                width: 182px;  
+            }
+        }
+    }
+
+// アクセス　お問い合わせ
+
+    &__contact-link {
+        margin-bottom: 74px;
+
+        @include device(desktop) {
+            margin-bottom: 125px;
+        }
+    }
+
+//    鍼灸しずいろ
+
+    &__company {
+        width: 100%;
+
+        &__wrap {
+            background: url(../../img/branch-salon-bg-img.png) no-repeat;
+            background-size: contain;
+            background-color: #6C7E64;
+            margin: 0 auto 50px;
+            height: 100%;
+            padding-top: 40%;
+            padding-bottom: 50px;
+            width: 100%;  
+
+            @include device(desktop) {
+                margin: 0 auto 110px;
+                padding-top: 40%;
+            }
+        }
+
+        &__contents {
+            background-color: #fff;
+            margin: 0 auto;
+            width: 85%;
+
+            @include device(desktop) {                
+                max-width: 1088px;
+            }
+
+            &__branch-salon {
+                margin: 0 auto;
+                text-align: center;
+                width: 75%;
+                
+                @include device(desktop) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: row-reverse;
+                    text-align: left;
+                    padding: 65px 50px;
+                    width: 100%;
+                }
+
+                &-image {
+                    @include device(desktop) {
+                        margin-left: 35px;
+                        width: 50%;
+                    }
+                    
+                    img {
+                        margin: 34px 0 37px;
+                        width: 100%;
+
+                        @include device(desktop) {
+                            margin: unset;
+                        }
+                    }
+                }
+
+                &__info {
+                    @include device(desktop) {
+                        width: 45%;
+                    }
+
+                    &-title {
+                        font-family: 'Shippori Mincho', serif;
+                        font-weight: normal;
+                        @include font-size (20px);
+                        margin-bottom: 23px;
+
+                        @include device(desktop) {
+                            @include font-size (40px);
+                            letter-spacing: 2px;
+                            margin-bottom: 52px;
+                        }
+                    }
+
+                    &-text  {
+                        font-family: 'Shippori Mincho', serif;
+                        line-height: 2;
+                        margin: 0 auto;
+                        width: 90%;
+
+                        @include device(desktop) {
+                            letter-spacing: 1px;
+                            line-height: 2;
+                            width: unset;
+                        }
+                    }
+
+                    &-btn { 
+                        width: 182px;
+                        margin: 0 auto;
+                        margin-top: 55px;
+                        padding-bottom: 50px;
+
+                        @include device(desktop) {
+                            width: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@
                 <div class="top__main-visual__hero-image">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/header-img.png" alt="">
                 </div>
-                <div class="top__main-visual__hero-catch catch2">
+                <div class="top__main-visual__hero-catch">
                     <p>キャッチコピーが<br>入ります</p>
                 </div>
             </div>

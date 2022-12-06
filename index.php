@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_template_part('components/page-header-main'); ?>
 <main>
-    <section class="top__main-visual">
+    <section class="top__main-visual test">
         <div class="top__main-visual__wrap">
             <div class="top__main-visual__hero">
                 <div class="top__main-visual__hero-image">

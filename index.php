@@ -11,7 +11,7 @@
                     <p>キャッチコピーが<br>入ります</p>
                 </div>
             </div>
-            <!-- 最新の投稿を１件表示 -->
+            <!-- 最新の投稿を１件表示する -->
             <?php
             $the_query = new WP_Query(array(
                 'post_type' => 'post',

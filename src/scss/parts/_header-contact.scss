@@ -75,8 +75,7 @@
             }
 
             li:hover {
-                background-color: #9fae99
-                ;
+                background-color: #9fae99;
 
                 @include device(desktop) {
                     background-color: unset;
@@ -132,54 +131,55 @@
         }
 
         .sp__hamburger-menu {
-                background-color: #fff;
-                display: block;      
-                width: 46px;      
-                height: 42px;      
-                position: relative;      
-                z-index: 9999;
-                border:none;    
+            background-color: #fff;
+            display: block;      
+            width: 46px;      
+            height: 42px;      
+            position: relative;      
+            z-index: 9999;
+            border:none;    
                                 
-                @include device(desktop) {
-                    display: none;
-                }
+            @include device(desktop) {
+                display: none;
+            }
 
-                .bar {    
-                    background-color: #000;  
-                    width: 20px;      
-                    height: 1px;        
-                    display: block;      
-                    position: absolute;      
-                    left: 50%;      
-                    transform: translateX(-50%);            
-                }
+            .bar {    
+                background-color: #000;  
+                width: 20px;      
+                height: 1px;        
+                display: block;      
+                position: absolute;      
+                left: 50%;      
+                transform: translateX(-50%);            
+            }
 
-                .bar__top {   
-                    top: 15px;
-                }
+            .bar__top {   
+                top: 15px;
+            }
                 
-                .bar__mid {    
-                    top: 50%;
-                    transform: translate(-50%,-50%);
-                }
+            .bar__mid {    
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
                 
-                .bar__bottom {
-                    bottom: 15px;
-                } 
-            }
-            .sp__hamburger-menu.active span:nth-child(1) {
-                top : 20px;
-                left: 13px;
-                background :#000;
-                transform: rotate(-45deg);
-            }
+            .bar__bottom {
+                bottom: 15px;
+            } 
+        }
 
-            .sp__hamburger-menu.active span:nth-child(2),
-            .sp__hamburger-menu.active span:nth-child(3) {
-              top: 20px;
-              left: 13px;
-              background :#000;
-              transform: rotate(45deg);
-            }
+        .sp__hamburger-menu.active span:nth-child(1) {
+            top : 20px;
+            left: 13px;
+            background :#000;
+            transform: rotate(-45deg);
+        }
+
+        .sp__hamburger-menu.active span:nth-child(2),
+        .sp__hamburger-menu.active span:nth-child(3) {
+            top: 20px;
+            left: 13px;
+            background :#000;
+            transform: rotate(45deg);
+        }
     }
 }

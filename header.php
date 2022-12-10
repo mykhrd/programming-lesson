@@ -11,7 +11,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Shippori+Mincho&display=swap" rel="stylesheet">
 <link rel="stylesheet "href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/dist/js/scripts.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
 </head>  
 <body>
 <?php wp_head(); ?>
-

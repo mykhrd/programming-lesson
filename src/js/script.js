@@ -31,7 +31,10 @@ $(document).ready(function(){
         slidesToShow: 1, 
         slidesToScroll: 1, 
         fade: true,
-        infinite: true
+        infinite: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false
     });
     
 });

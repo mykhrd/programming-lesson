@@ -6,8 +6,20 @@
                 <img class="header__main__logo-img" src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png" alt="">
             </a>
         </div>
-        <nav class="header__main__g-nav g-nav-sp">
-            <ul class="header__main__g-nav__list">
+        <!-- スマホ用グローバルナビ -->
+        <nav class="header__main__g-nav-sp g-nav-sp">
+            <ul class="header__main__g-nav-sp__list">
+                <li><a href="/about/">当院について</a></li>
+                <li><a href="/treatment/">施術について</a></li>
+                <li><a href="/menu/">メニュー</a></li>
+                <li><a href="/access/">アクセス</a></li>
+                <li><a href="/faq/">よくある質問</a></li>
+                <li><a href="/contact/">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!-- PC用グローバルナビ -->
+        <nav class="header__main__g-nav-pc">
+            <ul class="header__main__g-nav-pc__list">
                 <li><a href="/about/">当院について</a></li>
                 <li><a href="/treatment/">施術について</a></li>
                 <li><a href="/menu/">メニュー</a></li>

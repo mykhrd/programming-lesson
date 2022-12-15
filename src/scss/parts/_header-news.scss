@@ -37,7 +37,7 @@
         }
     }
 
-    &__g-nav {
+    &__g-nav-sp  {
         display: none;
         background-color: #6C7E64;
         color: #fff;
@@ -49,34 +49,51 @@
         z-index : 15;
 
         @include device(desktop) {
-            display: block;
+            display: none;
+        }
+        
+        &__list {
+            li {
+                line-height: 42px;
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            li:hover{
+                background-color:#566550;
+            }
+        }
+    }
+    
+    &__g-nav-pc {
+        display: none;
+
+        @include device(desktop) {
             background-color: #fff;
             color: unset;
-            display:flex;
+            display: flex;
             letter-spacing: 1px;
             opacity: unset;
             position: unset;
             height: 100%;
             width: 60%;
         }
-            
+
         &__list {
-            @include device(desktop) {
                 align-items: center;
                 display: flex;
                 justify-content:space-around;
                 width: 100%;
-            }
 
             li {
                 line-height: 42px;
-            }
 
-            li:hover{
-                background-color: #566550;
-
-                @include device(desktop) {
-                    background-color: unset;
+                a {
+                    display: block;
+                    width: 100%;
                 }
             }
         }

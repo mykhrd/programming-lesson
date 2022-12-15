@@ -1,11 +1,14 @@
 <?php get_header(); ?>
 <?php get_template_part('components/page-header-main'); ?>
 <main>
-    <section class="top__main-visual test">
+    <section class="top__main-visual">
         <div class="top__main-visual__wrap">
             <div class="top__main-visual__hero">
-                <div class="top__main-visual__hero-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/header-img.png" alt="">
+                <div class="top__main-visual__hero-image main-visual__slider">
+                    <img src="<?php echo get_template_directory_uri(); ?>/slick/img/header-slider-01.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/slick/img/header-slider-02.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/slick/img/header-slider-03.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/slick/img/header-slider-04.png" alt="">
                 </div>
                 <div class="top__main-visual__hero-catch">
                     <p>キャッチコピーが<br>入ります</p>
